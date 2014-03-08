@@ -90,6 +90,7 @@ class HaxeServer
 
             while (socket == null) {
                 try {
+                    Sys.println("\nBroadcasting on " + listenSocket.host() + " ...");
                     Sys.println("\nListening for client connection ...");
                     socket = listenSocket.accept();
                 }
